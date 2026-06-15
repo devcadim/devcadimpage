@@ -27,7 +27,7 @@ function ContactMe() {
                     <div className="Contact-card contact-gmail">
                         <div className="Contact-card-content">
                             <SiGmail className="Contact-icon" />
-                            <h2>E-mail</h2>
+                            <h2>Gmail</h2>
                             <p className="Contact-description">
                                 Para propostas formais, parcerias ou dúvidas profissionais. Respondo em até 24 horas.
                             </p>
