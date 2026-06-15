@@ -31,8 +31,8 @@ function About() {
                             Estou constantemente buscando aprimorar minhas habilidades e contribuir para a criação de soluções tecnológicas eficientes e inovadoras.
                             </p>
                             <div className="Hero-buttons">
-                            <a href="#projetos" className="Btn-primary">Ver Projetos & Conhecimentos</a>
-                            <a href="#contato" className="Btn-secondary">Contato</a>
+                                <Link to="/projetos" className="Btn-primary">Ver Projetos & Conhecimentos</Link>
+                                <Link to="/contato" className="Btn-secondary">Contato</Link>
                             </div>
                         </div>
                     </section>
