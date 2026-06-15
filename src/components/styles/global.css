@@ -1,0 +1,21 @@
+/* Reset básico e variáveis de cor */
+:root {
+  --bg-color: #121214;
+  --bg-cards: #1e1e24;
+  --text-main: #e1e1e6;
+  --text-support: #a8a8b3;
+  --primary-color: #1aaae9; /* Verde moderno, estilo tech */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

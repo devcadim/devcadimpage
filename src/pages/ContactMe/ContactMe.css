@@ -1,0 +1,141 @@
+.Main-content-contacts {
+  margin-top: 80px;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Contacts-header {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.Contacts-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.Contacts-header p {
+  color: var(--text-support);
+  font-size: 1.1rem;
+}
+
+/* Grid de Contatos - Igual ao de Projetos */
+.Contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Paleta de Cores das Redes Sociais */
+.contact-gmail {
+  --brand-color: #ea4335; /* Vermelho Gmail */
+}
+
+.contact-instagram {
+  --brand-color: #e1306c; /* Rosa/Gradiente Instagram */
+}
+
+.contact-discord {
+  --brand-color: #5865f2; /* Azul Blurple Discord */
+}
+
+/* Card Individual de Contato */
+.Contact-card {
+  background-color: var(--bg-cards);
+  border: 1px solid #29292e;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover customizado usando a cor da marca */
+.Contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-color);
+  box-shadow: 0px 8px 30px rgba(var(--brand-color), 0.15); 
+  /* Nota: Se o box-shadow com rgba não aplicar por conta do formato hex, usamos o fallback abaixo: */
+  box-shadow: 0px 8px 30px var(--brand-color);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+.Contact-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ícones grandes no topo do conteúdo do card */
+.Contact-icon {
+  font-size: 2.5rem;
+  color: var(--brand-color);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.Contact-card:hover .Contact-icon {
+  transform: scale(1.1);
+}
+
+.Contact-card h2 {
+  font-size: 1.35rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.Contact-description {
+  color: var(--text-support);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Botões do Card */
+.Contact-links {
+  display: flex;
+  width: 100%;
+}
+
+.Contact-btn-brand {
+  padding: 0.75rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  
+  /* Usa a cor da marca como background */
+  background-color: var(--brand-color);
+  color: #ffffff; /* Texto branco para melhor contraste */
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.Contact-btn-brand:hover {
+  filter: brightness(0.85); /* Escurece um pouco no hover independente da cor */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .Main-content-contacts {
+    padding: 2rem 1.5rem;
+  }
+  
+  .Contacts-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .Contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
