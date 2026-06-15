@@ -55,9 +55,11 @@ function Projects() {
                                 Assim como registro de usuários, autenticação e autorização para acesso a áreas restritas do sistema.
                             </p>
                             <div className="Tech-badges">
-                                <span>React</span>
-                                <span>TypeScript</span>
-                                <span>Node.js</span>
+                                <span>Java 21</span>
+                                <span>Spring Boot 3</span>
+                                <span>MySQL</span>
+                                <span>Redis</span>
+                                <span>Spring Security</span>
                             </div>
                         </div>
                         <div className="Project-links">
