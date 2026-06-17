@@ -63,7 +63,7 @@ function Projects() {
                             </div>
                         </div>
                         <div className="Project-links">
-                            <a href="https://github.com/devcadim/file-upload-api" target="_blank" rel="noreferrer" className="Project-btn-primary">
+                            <a href="https://github.com/devcadim" target="_blank" rel="noreferrer" className="Project-btn-primary">
                             Em desenvolvimento
                             </a>
                         </div>
